@@ -3,6 +3,7 @@ all: main
 
 
 main : 
+	@echo "Making the executable -- some warnings can be safely ignored"
 	g++ -o main main.cpp ccc_x11.cpp ccc_shap.cpp -L /usr/X11R6/lib -lX11
 
 run : 
